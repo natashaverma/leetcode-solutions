@@ -1,4 +1,4 @@
-package com.techmisal.easy
+package com.techmisal.easy;
 
 /* 
 Goal: sort a given array of integers so that every second number is greater than both of its adjacents
