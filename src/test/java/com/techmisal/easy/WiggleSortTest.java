@@ -1,5 +1,7 @@
 package com.techmisal.easy;
 
+import org.junit.Assert;
+import org.junit.Test;
 
 public class WiggleSortTest {
 	private WiggleSort wigglesort = new WiggleSort();
