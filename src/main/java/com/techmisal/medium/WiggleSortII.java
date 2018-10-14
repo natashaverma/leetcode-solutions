@@ -9,7 +9,7 @@ Fail-Case: if a wiggle sort is impossible e.g. {1, 1, 1}, return null
 */
 
 
-public class WiggleSort {
+public class WiggleSortII {
 	public int[] sort(int[] array) {
     if (array.length == 1) return array;
 

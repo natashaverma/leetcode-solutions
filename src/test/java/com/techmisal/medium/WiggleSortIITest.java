@@ -3,7 +3,7 @@ package com.techmisal.easy;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class WiggleSortTest {
+public class WiggleSortIITest {
 	private WiggleSort wigglesort = new WiggleSort();
 
 	@Test
