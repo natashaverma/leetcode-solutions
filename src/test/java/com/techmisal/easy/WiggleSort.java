@@ -1,11 +1,9 @@
 package com.techmisal.easy
 
-import java.lang.Math
-
 /* 
 Goal: sort a given array of integers so that every second number is greater than both of its adjacents
 
-Method: sort numbers
+Method: sort numbers first, then split and rearrange
 
 Fail-Case: if a wiggle sort is impossible e.g. {1, 1, 1}, return null
 */
