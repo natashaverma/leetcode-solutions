@@ -1,53 +1,22 @@
 package com.techmisal.easy;
 
-/* 
-Goal: sort a given array of integers so that every second number is greater than both of its adjacents
 
-Method: sort numbers first, then split and rearrange
+public class WiggleSortTest {
+	private WiggleSort wigglesort = new WiggleSort();
 
-Fail-Case: if a wiggle sort is impossible e.g. {1, 1, 1}, return null
-*/
+	@Test
+	public void testWiggleSort() {
+		int[] testcase1 = {1, 2, 3, 4, 5, 6}; //multiple solutions
+		int[] rescase1 = {1, 4, 2, 5, 3, 6}; //one chosen
 
+		int[] testcase2 = {1, 2, 1, 1, 2, 2}; //only one solution
+		int[] rescase2 = {1, 2, 1, 2, 1, 2};
 
-public class WiggleSort {
-	public int[] sort(int[] array) {
-    if (array.length == 1) return array;
+		int[] testcase3 = {1, 2, 2, 3}; //no solution
+		int[] rescase3 = null;
 
-    //sort array with bubblesort
-    for (int j = 0; j < array.length-1; j++) { //takes (arraylength-1) moves to get highest number from left to right (worst-case)
-      for (int i = 0; i < array.length-1; i++) {
-        if (array[i] > array[i+1]) {
-          swap(array, i, i+1);
-        }
-      }
-    }
-
-    int lowmid = (int)(array.length/2)-1;
-    //check failcase
-    if (array.length > 2) {	
-      if (array[lowmid] == array[lowmid+1]) {
-        if (array.length % 2 == 0 || array.length % 2 == 1 && array[lowmid+2] == array[lowmid]) {
-          return null;
-        } 
-      }
-    }
-
-    //rearrange
-    int[] narray = new int[array.length];
-    for (int i = 0; i < array.length; i++) {
-      if (i % 2 == 0) {
-        narray[i] = array[(int)(i / 2)];
-      } else {
-        narray[i] = array[lowmid + 1 + (int)(i / 2)];
-      }
-    }
-
-    return narray;
-  }
-
-  private void swap(int[] nums, int i, int j) {
-    int temp = nums[i];
-    nums[i] = nums[j];
-    nums[j] = temp;
-  }
+		Assert.assertEquals( rescase1, wigglesort.sort(testcase1) );
+		Assert.assertEquals( rescase2, wigglesort.sort(testcase2) );
+		Assert.assertEquals( rescase3, wigglesort.sort(testcase3) );
+	}
 }
