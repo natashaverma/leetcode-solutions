@@ -34,7 +34,7 @@ Stop thinking start contributing to leetcode solution
 - [MaximumProductOfWordLengths](https://github.com/pratikpalashikar/leetcode-solutions/blob/master/src/main/java/com/techmisal/medium/MaximumProductOfWordLengths.java)
 - [SummaryRanges](https://github.com/pratikpalashikar/leetcode-solutions/blob/master/src/main/java/com/techmisal/medium/SummaryRanges.java)
 - [MinimumHeightTree](https://github.com/pratikpalashikar/leetcode-solutions/blob/master/src/main/java/com/techmisal/medium/MinimumHeightTree.java)
-
+- [KthSmallestInBST](https://github.com/natashaverma/leetcode-solutions/blob/master/src/main/java/com/techmisal/medium/Kth_Smallest_Element_in_a_BST.java)
 
 ### Hard
 
